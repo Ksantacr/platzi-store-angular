@@ -54,7 +54,12 @@ export class AppComponent {
       price: 80000,
       description: 'bla bla bla bla bla'
     },
-  ]
+  ];
+
+  addProductToCart($event) {
+    console.log("app.component")
+    console.dir($event)
+  }
 
   addItem() {
     this.names.push('nuevo item');
