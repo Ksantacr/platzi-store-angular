@@ -56,6 +56,8 @@ export class AppComponent {
     },
   ];
 
+  power = 10;
+
   addProductToCart($event) {
     console.log("app.component")
     console.dir($event)
