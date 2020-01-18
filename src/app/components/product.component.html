@@ -6,3 +6,4 @@
   {{ product.price }}
 </strong>
 <button (click)="addToCart()">Add to cart</button>
+<a [routerLink]="['/products', product.id]">Ver detalle</a>

@@ -16,6 +16,8 @@ import { DemoComponent } from './demo/demo.component';
 import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ContactComponent } from './contact/contact.component';
     DemoComponent,
     HeaderComponent,
     BannerComponent,
-    ContactComponent
+    ContactComponent,
+    ProductDetailComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
