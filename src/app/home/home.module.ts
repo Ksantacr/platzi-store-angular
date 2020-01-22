@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
@@ -10,8 +11,9 @@ import { BannerComponent } from './components/banner/banner.component';
     HomeComponent
   ],
   imports: [
+    CommonModule,
+    SharedModule,
     HomeRoutingModule,
-    CommonModule
   ]
 })
 export class HomeModule {

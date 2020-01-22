@@ -1,18 +1,16 @@
+import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductComponent } from './components/product.component';
-import { ExponentialPipe } from './exponential.pipe';
-import { HighlightDirective } from './highlight.directive';
-import { FooterComponent } from './footer/footer.component';
+import { ProductComponent } from './product/product.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductsComponent } from './products/products.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DemoComponent } from './demo/demo.component';
-import { HeaderComponent } from './header/header.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { LayoutComponent } from './layout/layout.component';
@@ -21,14 +19,10 @@ import { LayoutComponent } from './layout/layout.component';
   declarations: [
     AppComponent,
     ProductComponent,
-    ExponentialPipe,
-    HighlightDirective,
-    FooterComponent,
     CartComponent,
     ProductsComponent,
     PageNotFoundComponent,
     DemoComponent,
-    HeaderComponent,
     ContactComponent,
     ProductDetailComponent,
     LayoutComponent
@@ -36,7 +30,9 @@ import { LayoutComponent } from './layout/layout.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    SharedModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
